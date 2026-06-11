@@ -1,0 +1,89 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+@font-face { 
+    font-family: 'IBM_VGA_8x16';
+    src: url(https://drekfortmdc.neocities.org/px437_ibm_vga_8x16-webfont.woff2) format('woff2'),
+         url(https://drekfortmdc.neocities.org/px437_ibm_vga_8x16-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+}
+
+body {
+  background-image: 
+  radial-gradient(
+    /*rgba(28, 28, 28, 0.75), black 120%*/
+    rgba(0, 0, 50, 0.75), black 120%
+  );
+  /*repeating-linear-gradient(
+    0deg,
+    black,
+    black 1px,
+    gray 1px,
+    gray 2px
+  );*/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  backdrop-filter: none;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  background-color: black;
+  
+  color: rgba(46, 127, 255, 1);
+  font-family: 'IBM_VGA_8x16', monospace;
+  font-size: 16px;
+  
+  text-shadow: 0 0 5px rgba(46, 127, 255);
+}
+
+a:link {
+  color: rgba(46, 127, 255, 1);
+}
+a:visited{ 
+  color: rgba(46, 127, 255, 1);
+}
+
+::selection {
+  background: #FFFFFF;
+  text-shadow: none;
+}
+
+pre {
+  margin: 0;
+}
+
+/* From ParkAction. */
+@keyframes ScanlineAnimationRight {
+	0% {transform: translateX(0px) translateY(0px);}100% {transform: translateX(32px) translateY(-32px);}
+}
+@keyframes ScanlineAnimationLeft {
+	0% {transform: translateX(0px) translateY(0px);}100% {transform: translateX(-32px) translateY(-32px);}
+}
+body::before {
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: calc(100% + 32px);
+	height: calc(100% + 32px);
+	background-image: url('https://drekfortmdc.neocities.org/computeroverlay.png');
+	background-position-x: 0px;
+	background-position-y: 0px;
+	background-repeat: repeat;
+	z-index: 10000000;
+	animation: ScanlineAnimationLeft 2s linear infinite;
+	animation-name: ScanlineAnimationLeft;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	pointer-events: none;
+	opacity: 1;
+}
