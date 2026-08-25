@@ -94,7 +94,7 @@ input[type="text"], input[type="email"] {
   backdrop-filter: none;
   margin: 0;
   background-color: black;
-  border: none;
+  border: 1px solid white;
   border-color: transparent;
   outline: none;
   color: rgba(46, 127, 255, 1);
@@ -108,10 +108,14 @@ input[type=submit] {
   backdrop-filter: none;
   margin: 0;
   background-color: black;
-  border: none;
+   border: 1px solid white;
   border-color: transparent;
   outline: none;
   color: rgba(46, 127, 255, 1);
   font-family: 'IBM_VGA_8x16', monospace;
   font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: white;
 }
