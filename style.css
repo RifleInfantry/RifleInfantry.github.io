@@ -93,9 +93,10 @@ input[type="text"], input[type="email"] {
   background-repeat: no-repeat;
   backdrop-filter: none;
   margin: 0;
-  background-color: none transparent;
+  padding: 0;
+  background-color: transparent;
   border: none;
-  border-color: none transparent;;
+  border-color: transparent;
   outline: none;
   color: rgba(46, 127, 255, 1);
   caret: underscore;
@@ -108,7 +109,8 @@ input[type=submit] {
   background-repeat: no-repeat;
   backdrop-filter: none;
   margin: 0;
-  background-color: none transparent;
+  padding: 0;
+  background-color: transparent;
   border: none;
   border-color: none transparent;
   outline: none;
