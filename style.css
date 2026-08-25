@@ -88,12 +88,11 @@ body::before {
 	opacity: 1;
 }
 
-input[type="text"] {
+input[type="text"], input[type="email"] {
   background-attachment: fixed;
   background-repeat: no-repeat;
   backdrop-filter: none;
   margin: 0;
-  padding: 2rem;
   background-color: black;
   border: none;
   border-color: transparent;
@@ -103,7 +102,7 @@ input[type="text"] {
   font-size: 16px;
 }
 
-input[type="email"] {
+input[type=submit] {
   background-attachment: fixed;
   background-repeat: no-repeat;
   backdrop-filter: none;
