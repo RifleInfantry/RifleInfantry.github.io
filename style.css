@@ -95,7 +95,8 @@ input[type="text"] {
   margin: 0;
   padding: 2rem;
   background-color: black;
-  border-color: black;
+  border: none;
+  border-color: transparent;
   outline: none;
   color: rgba(46, 127, 255, 1);
   font-family: 'IBM_VGA_8x16', monospace;
@@ -107,9 +108,9 @@ input[type="email"] {
   background-repeat: no-repeat;
   backdrop-filter: none;
   margin: 0;
-  padding: 2rem;
   background-color: black;
-  border-color: black;
+  border: none;
+  border-color: transparent;
   outline: none;
   color: rgba(46, 127, 255, 1);
   font-family: 'IBM_VGA_8x16', monospace;
