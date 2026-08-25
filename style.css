@@ -92,10 +92,25 @@ input[type="text"] {
   background-attachment: fixed;
   background-repeat: no-repeat;
   backdrop-filter: none;
-  min-height: 100vh;
   margin: 0;
   padding: 2rem;
   background-color: black;
+  border-color: black;
+  outline: none;
+  color: rgba(46, 127, 255, 1);
+  font-family: 'IBM_VGA_8x16', monospace;
+  font-size: 16px;
+}
+
+input[type="email"] {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  backdrop-filter: none;
+  margin: 0;
+  padding: 2rem;
+  background-color: black;
+  border-color: black;
+  outline: none;
   color: rgba(46, 127, 255, 1);
   font-family: 'IBM_VGA_8x16', monospace;
   font-size: 16px;
