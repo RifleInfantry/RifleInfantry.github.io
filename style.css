@@ -93,11 +93,12 @@ input[type="text"], input[type="email"] {
   background-repeat: no-repeat;
   backdrop-filter: none;
   margin: 0;
-  background-color: black;
-  border: 1px solid white;
-  border-color: white;
+  background-color: none transparent;
+  border: none;
+  border-color: none transparent;;
   outline: none;
   color: rgba(46, 127, 255, 1);
+  caret: underscore;
   font-family: 'IBM_VGA_8x16', monospace;
   font-size: 16px;
 }
@@ -107,9 +108,9 @@ input[type=submit] {
   background-repeat: no-repeat;
   backdrop-filter: none;
   margin: 0;
-  background-color: black;
-   border: 1px solid white;
-  border-color: white;
+  background-color: none transparent;
+  border: none;
+  border-color: none transparent;
   outline: none;
   color: rgba(46, 127, 255, 1);
   font-family: 'IBM_VGA_8x16', monospace;
